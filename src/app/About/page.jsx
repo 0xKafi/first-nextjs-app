@@ -2,10 +2,11 @@ import Link from 'next/link';
 import React from 'react';
 
 const page = () => {
-    throw new Error("Big Error")
+    // throw new Error("Big Error")
     return (
         <div>
             <Link href='/About/Mission'>Mission</Link>
+            <Link href='/About/NoPage' className='ml-5'>NoPage</Link>
             <p className='mt-10 h-20 w-100 mx-auto border'>About Page</p>
         </div>
     );
