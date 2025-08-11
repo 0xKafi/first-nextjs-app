@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 
 const page = () => {
+    throw new Error("Big Error")
     return (
         <div>
             <Link href='/About/Mission'>Mission</Link>
