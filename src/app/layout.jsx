@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
         <nav>
           <ul className="flex space-x-5 justify-center">
             <li><Link href='/'>Home</Link></li>
-            <li><Link href='/About'>About</Link></li>
+            <li><Link prefetch={false} href='/About'>About</Link></li>
           </ul>
         </nav>
         <div className="h-100">
