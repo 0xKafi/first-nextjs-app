@@ -1,9 +1,11 @@
+import Link from 'next/link';
 import React from 'react';
 
 const page = () => {
     return (
         <div>
-            <p>About Page</p>
+            <Link href='/About/Mission'>Mission</Link>
+            <p className='mt-10 h-20 w-100 mx-auto border'>About Page</p>
         </div>
     );
 };
