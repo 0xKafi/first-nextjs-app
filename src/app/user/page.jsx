@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const page = () => {
@@ -19,7 +20,9 @@ const page = () => {
         <div className='mt-10'>
             blog page
             {userData.map((user)=>
-                <li key={user.id}>{user.name}</li>
+                <li key={user.id}>
+                    <Link href={`/user/${user.id}`}>{user.name}</Link>
+                </li>
             )}
         </div>
     );
