@@ -20,9 +20,9 @@ const page = () => {
         <div className='mt-10'>
             blog page
             {userData.map((user)=>
-                <li key={user.id}>
+                <ol key={user.id}>
                     <Link href={`/user/${user.id}`}>{user.name}</Link>
-                </li>
+                </ol>
             )}
         </div>
     );
